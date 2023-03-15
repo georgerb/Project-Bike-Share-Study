@@ -96,7 +96,7 @@ SET  Trip_duration =CONVERT(DECIMAL(30,2),Cast(DATEDIFF(SECOND,started_at,ended_
 --remove every row where the trip duration is less than 1 minutes or greater than 1 day 
 DELETE FROM #biker_info
 WHERE (Trip_duration <1) OR (Trip_duration >1440)
-
+--extracting the month , weekday,day and hour and store them as seperate fields 
 ALTER TABLE #biker_info 
 ADD hour INTEGER,
     Day INTEGER,
