@@ -1,0 +1,83 @@
+//My analysis Started with excel just to get some insights on the data at hand 
+//I used three month of data May,November and December 
+//the following showcase what i did and what i learned 
+
+2022-12 data set
+
+no duplicate found 
+Trimmed whitespace from 40 selected cells.
+
+checked for missing data using conditional formatting 
+a lot of missing data pertaining to the start and destination
+noticed that every id consists of 16 characters 
+used conditional formatting to make sure that every id is of len 16 
+some ids were wrong and needs to be removed 
+
+
+
+Pivot tables created 
+
+1-total number of rides each day of the week(Member vs Casual)
+2-average trip duration Member vs Casual 
+3-average trip duration each day of the week (Member vs casual)
+4-total number of rides at each hour of the day (Member vs Casual)
+5-number of trips for each type of bike (Member vs Casual)
+6-number of trips for every day in the month (Member vs Casual)
+
+Insights
+ 
+1-noticed that both member and casual riders are most active on Friday and Saturday
+2-on average casual rider’s trip last much longer then that of the member as is approximately double the time 
+3-the member’s average trip duration is the highest on Wednesday as opposed to the casual’s which is on Sunday
+4-the number of rides for both casual and members peaks at around 5 pm 
+5-the majority of both casual and members prefer the electric bikes to the classic and docked bike, a small number of causal uses the docked bike compared to 0 for Member group 
+6-i noticed a small decline in total number of rides for both members and casual riders towards the end of the month 
+
+2022-11 dataset 
+
+no duplicates were found 
+trimmed for white spaces 55 cells were selected 
+used conditional formatting to make sure that every id is of len 16 
+some ids were wrong and needs to be removed 
+
+when checking the lowest trip duration i noticed that some of the entries are negative some clarification are needed maybe the start and end date were intertwined i remove those rows for the sake of the analysis 
+i used some filtering to locate negative duration and remove them
+filtered out and deleted empty rows starting at row 13591 
+and filtered out duration that are longer than a day 
+
+1-total number of rides each day of the week(Member vs Casual)
+2-average trip duration Member vs Casual 
+3-average trip duration each day of the week (Member vs casual)
+4-total number of rides at each hour of the day (Member vs Casual)
+5-number of trips for each type of bike (Member vs Casual)
+6-number of trips for every day in the month (Member vs Casual)
+
+1-noticed that both member riders are most active on wednesday and Thursday and casual riders are most active on friday and saturday 
+2-on average casual rider’s trip last much longer then that of the member as is approximately double the time 
+3-both casual and member riders trip duration are the highest on monday and friday 
+
+4-the number of rides for both casual and members peaks at around 4 and5 pm 
+5-he majority of both casual and members prefer the electric bikes to the classic and docked bike, a small number of causal uses the docked bike compared to 0 for Member group 
+6-i noticed a decline in total number of rides for both members and casual riders after the 10th day that may be due to the start of cold weather
+
+2022-05 dataset 
+
+no duplicated were found 
+used conditional formatting to check if every id is of len 16 
+
+1-total number of rides each day of the week(Member vs Casual)
+2-average trip duration Member vs Casual 
+3-average trip duration each day of the week (Member vs casual)
+4-total number of rides at each hour of the day (Member vs Casual)
+5-number of trips for each type of bike (Member vs Casual)
+6-number of trips for every day in the month (Member vs Casual)
+
+first insight recorded is that in may total numbers of riders for both casual and members is significantly higher in may than it is in November and December due to the warm weather 
+
+1- noticed that rides for member are most frequent on Tuesday and for casual riders it is most frequent on monday 
+2-on average casual rider’s trip last much longer then that of the member as is approximately double the time 
+3- average trip duration is highest on monday and sunday 
+4-he number of rides for both casual and members peaks between 4 and 6 pm this maybe due to the fact that employees are returning home from work 
+
+5-the majority of both casual and members prefer the electric bikes to the classic and docked bike, a small number of causal uses the docked bike compared to 0 for Member group 
+6-i noticed a sharp increase in trips fro both member and casual riders at the end of the month of may
